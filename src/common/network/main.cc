@@ -9,7 +9,7 @@
 void PromptForAddress(tutorial::Person *person) {
     assert(person);
     std::cout << "Enter person ID number: ";
-    std::int32_t id{0};
+    int32_t id{0};
     std::cin >> id;
     person->set_id(id);
     std::cin.ignore(256, '\n');
